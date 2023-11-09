@@ -1,54 +1,81 @@
-*{
+/* Reset styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.img2{
-float:right;
-margin-top: 20px;
-
+/* Float right and margin for .img2 */
+.img2 {
+    float: right;
+    margin-top: 20px;
 }
 
-
-.navbar-nav li a{
+/* Styles for navbar links */
+.navbar-nav li a {
     color: gray;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-.navbar-nav li a:hover{
-    border-bottom:  5px solid #2aacff;
+.navbar-nav li a:hover {
+    border-bottom: 5px solid #2aacff;
     color: #2aacff;
     font-weight: bold;
-    display: flex;
-  justify-content: flex-end;
-  
-}
-h3{
-font-family: Arial, Helvetica, sans-serif;
-text-align: center ;
-font-weight: bolder;
-
 }
 
-p{
+/* Centered and bold h3 */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Justified text for paragraphs */
+p {
     text-align: justify;
 }
 
-.p1{
-      text-align: center;
-  }
-  
-a{
+/* Centered paragraph with class .p1 */
+.p1 {
+    text-align: center;
+}
+
+/* Remove cursor for all links */
+a {
     cursor: default;
 }
 
+/* Remove spacing for tables */
 table.no-spacing {
-    border-spacing:0; /* Removes the cell spacing via CSS */
-    border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
-  }
- 
-.col-md-6:hover{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* Box shadow on hover for col-md-6 */
+.col-md-6:hover {
     box-shadow: 20px 20px 50px 10px pink inset;
+}
+
+/* Responsive styles using media queries */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .img2 {
+        float: none;
+        margin-top: 10px; /* Adjust as needed */
+    }
+
+    .navbar-nav li a {
+        font-size: 14px; /* Adjust as needed */
+    }
+
+    h3 {
+        font-size: 18px; /* Adjust as needed */
+    }
+
+    p {
+        font-size: 14px; /* Adjust as needed */
+    }
+
+    /* Add more styles for smaller screens as needed */
 }
